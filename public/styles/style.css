@@ -1,17 +1,17 @@
-* {
-  box-sizing: border-box;
-}
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Luckiest+Guy&display=swap");
-
+* {
+  box-sizing: border-box;
+}
+/* home page */
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
-  /* height: 110vh;
-  border: 2px solid red; */
+  /* height: 110vh; */
+  /* border: 2px solid red; */
 
   text-align: center;
 }
@@ -56,8 +56,9 @@ section {
   text-align: center;
   /* font-family:"Rubik Scribble", sans-serif;  */
   color: white;
-  height: 850px;
+  /* height: 850px; */
   /* border: 2px solid rgb(19, 35, 172) */
+  height: 100vh;
 }
 .buyticket {
   position: absolute;
@@ -92,6 +93,183 @@ section img {
   /* margin-top: 10px; */
   position: absolute;
   /* bottom: 600px; */
-  top: 400px;
-  right: 320px;
+  top: 500px;
+  right: 520px;
+  font-weight: 150px;
+  width: 900px;
+}
+.footer {
+    background-color: hsl(317, 67%, 24%);
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    width: auto;
+}
+.Copyright {
+    position: relative;
+    top: 55px;
+}
+
+
+/* contact page */
+.contact-header {
+    background-color: #a13581!important;
+}
+.contact-ul {
+    background-color: #a13581!important;
+}
+.contact {
+    text-align: center;
+    padding: 50px;
+    background-color: #a13581;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    /* font-family:"Rubik Scribble", sans-serif;  */
+    color: white;
+    height: 850px;
+     /* border: 2px solid rgb(19, 35, 172) ; */
+    height: fit-content;
+    
+   
+
+}
+.contact h3 {
+    font-family: "Henny Penny", sans-serif;
+  font-size: 42px;
+  /* border: 2px solid rgb(19, 35, 172) ; */
+  height: 150px;
+  
+}
+.contact h1 {
+    font-size: 17em;
+  /* border: 2px solid 
+  gray; */
+  position: relative;
+  bottom: 250px;
+  letter-spacing: 15px;
+  font-family: "Luckiest Guy", sans-serif;
+  /* border: 2px solid rgb(19, 35, 172) ; */
+  height: 150px;
+}
+.contact img {
+     max-width: 100%;
+  /* font-size: 250px; */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  position: absolute;
+  bottom: 600px;
+   top: 450px;
+  right: 550px; 
+  width: 800px;
+  /* border: 2px solid rgb(19, 35, 172) ; */
+}
+.aaa {
+    margin-left: 250px;
+}
+.contact-section2 {
+       /* border: 2px solid rgb(19, 35, 172) ; */
+       font-family: "Luckiest Guy", sans-serif;
+       width: fit-content;
+       /* font-size: 105px; */
+       /* display: flex;
+       flex-direction: column;
+       justify-content: flex-start; */
+      text-align: start;
+      
+      ;
+      
+}
+.contact-section3-container {
+    display: flex;
+    gap: 300px;
+    
+}
+.contact-section2 h6 {
+    
+    color: #f2731a;
+    font-size: 28px;
+}
+.contact-section2 p {
+    /* border: 2px solid rgb(19, 35, 172) ; */
+    font-size: 15px;
+    width: 420px;
+    position: relative;
+    bottom: 55px;
+}
+.contact-section3 {
+    /* border: 2px solid rgb(19, 35, 172) ; */
+    text-align: start;
+    width: fit-content;
+    position: relative;
+    bottom: 55px;
+          /* border: 2px solid rgb(19, 35, 172) ; */
+}
+.number-email-location {
+    font-family: "Luckiest Guy", sans-serif;
+    font-size: 28px;
+}
+.number-email-location p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+.container {
+    /* background-color: #fff; */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+          /* border: 2px solid rgb(19, 35, 172) ; */
+          height: 450px;
+          width: 650px;
+          text-align: start;
+          position: relative;
+          bottom: -40px;
+          
+          
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #f2731a;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Luckiest Guy", sans-serif;
+}
+
+button:hover {
+    background-color: #f2731a;
+}
+/* services page */
+.services {
+    text-align: center;
+    padding: 50px;
+    background-color: hsl(317, 67%, 24%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    /* font-family:"Rubik Scribble", sans-serif;  */
+    color: white;
+    height: 850px;
+    /* border: 2px solid rgb(19, 35, 172) */
+    height: fit-content;
 }

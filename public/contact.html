@@ -1,26 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Contact</title>
-</head>
-<body>
-    <header>
-        <img
-          src="https://staging.websitedemos.net/halloween-party-04/wp-content/uploads/sites/1124/2022/09/logo-regular.png"
-          alt=""
-        />
-      </header>
-      <nav>
-        <ul>
-         <li><a href="/">HOME</a></li> 
-          <li><a href="/ourservicers">OUR SERVICES</a></li>
-          <li><a href="/contactus">CONTACT US </a></li>
-        </ul>
-        
-      </nav>
-      <h1>this is contact page</h1>
+  </head>
+  <body>
+    <header class="contact-header">
+      <img
+        src="https://staging.websitedemos.net/halloween-party-04/wp-content/uploads/sites/1124/2022/09/logo-regular.png"
+        alt=""
+      />
+    </header>
+    <nav>
+      <ul class="contact-ul">
+        <li><a href="/">HOME</a></li>
+        <li><a href="/ourservicers">OUR SERVICES</a></li>
+        <li><a href="/contactus">CONTACT US </a></li>
+      </ul>
+    </nav>
+    <div class="contact">
+      <h3>Get in touch</h3>
+      <h1>Contact</h1>
+      <img
+        src="https://staging.websitedemos.net/halloween-party-04/wp-content/uploads/sites/1124/2022/09/hero_01.png"
+        alt=""
+      />
+      <div class="contact-section3-container">
 
-</body>
+      <div class="aaa">
+        <div class="contact-section2">
+          <h6>Party location</h6>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper.
+          </p>
+        </div>
+        
+        
+          <div class="contact-section3">
+  
+        
+            <div class="number-email-location" >
+              📞
+              <span>929-242-6868</span>
+              <p>PHONE NUMBER</p>
+            </div>
+            <div class="number-email-location">
+              ✉️
+               <span>contact@info.com</span>
+              <p>EMAIL ADDRESS</p>
+            </div>
+            <div class="number-email-location">
+              📍
+              <span>2415 Gordon St, New Orleans LA 70123</span>
+              <p>LOCATION</p>
+            </div>
+          </div>
+      </div>
+          <div class="container">
+            <form id="contactForm">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+    
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="lastName" name="lastName" required />
+    
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+    
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="msg" rows="4" required></textarea>
+    
+              <button type="button" onclick="submitForm()">Send</button>
+            </form>
+    
+            
+          </div>
+          
+      </div>
+      <div >
+       
+      <p class="Copyright">Copyright © 2023 Halloween Party | Powered by Halloween Party</p>
+      </div>
+    
+  </body>
 </html>
