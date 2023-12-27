@@ -2,11 +2,14 @@ const exp = require("constants");
 const express = require("express");
 const app = express();
 const path = require("path");
-// const { engine } = require("express-handlebars");
+const { engine } = require("express-handlebars");
 
-// 
+//
 
-// app.use(express.static("public"));
+app.use(express.static("public"));
+app.engine("handlebars", engine());
+app.set("view engine", "handlebars");
+app.set("views", "./views");
 // let token = false;
 // const Actif = (req, res, next) => {
 //   let on = false;
@@ -24,15 +27,15 @@ const path = require("path");
 //     }
 //   };
 // get
-// call back function / end point
 app.get("/", (req, res) => {
-  res.sendFile(path.resolve("public", "home.html"));
+  res.render("home");
 });
+
 app.get("/ourservicers", (req, res) => {
-  res.sendFile(path.resolve("public", "services.html"));
+  res.render("ourservicers");
 });
 app.get("/contactus", (req, res) => {
-  res.sendFile(path.resolve("public", "contact.html"));
+  res.render("contactus");
 });
 
 // post
