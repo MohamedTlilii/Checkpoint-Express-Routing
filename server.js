@@ -5,7 +5,7 @@ const path = require("path");
 // const { engine } = require("express-handlebars");
 
 // 
-middleware
+
 // app.use(express.static("public"));
 // let token = false;
 // const Actif = (req, res, next) => {
