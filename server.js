@@ -1,8 +1,6 @@
-// const exp = require("constants");
 const express = require("express");
 const app = express();
-
-// const path = require("path");
+const path = require("path");
 const { engine } = require("express-handlebars");
 
 //
@@ -20,23 +18,8 @@ app.use(express.static("public"));
 app.engine("handlebars", engine());
 app.set("view engine", "handlebars");
 app.set("views", "./views");
-// let token = false;
-// const Actif = (req, res, next) => {
-//   let on = false;
-//   if (on) {
-//     next();
-//   } else {
-//     res.redirect("/home");
-//   }
-// };
-// const verifyToken = (req, res, next) => {
-//     if (token) {
-//       next();
-//     } else {
-//       res.redirect("/home");
-//     }
-//   };
-// get
+app.use(workingHoursMiddleware);
+
 app.get("/", (req, res) => {
   res.render("home");
 });
