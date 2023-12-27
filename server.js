@@ -4,10 +4,26 @@ const app = express();
 const path = require("path");
 // const { engine } = require("express-handlebars");
 
-// CRUD METHODS:
-app.use(express.static("public"));
+// 
+middleware
+// app.use(express.static("public"));
+// let token = false;
+// const Actif = (req, res, next) => {
+//   let on = false;
+//   if (on) {
+//     next();
+//   } else {
+//     res.redirect("/home");
+//   }
+// };
+// const verifyToken = (req, res, next) => {
+//     if (token) {
+//       next();
+//     } else {
+//       res.redirect("/home");
+//     }
+//   };
 // get
-
 // call back function / end point
 app.get("/", (req, res) => {
   res.sendFile(path.resolve("public", "home.html"));
