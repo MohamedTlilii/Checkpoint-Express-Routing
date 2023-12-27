@@ -10,8 +10,11 @@ const path = require("path");
 app.get("/", (req, res) => {
   res.sendFile(path.resolve("public" , "home.html"));
 });
-app.get("/about", (req, res) => {
-  res.send("this is about res");
+app.get("/ourservicers", (req, res) => {
+  res.sendFile(path.resolve("public" , "contact.html"));
+});
+app.get("/contactus", (req, res) => {
+  res.sendFile(path.resolve("public" , "services.html"));
 });
 
 // post
